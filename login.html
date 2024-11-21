@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							slate: '#3C4250',
+							cultured: '#F1F1F1'
+						}
+					}
+				}
+			};
+		</script>
+
+		<title>Login - EMS</title>
+	</head>
+
+	<body class="bg-slate">
+		<header>
+			<div class="flex items-center gap-2.5 p-2">
+				<img
+					src="./assets/ems_plain.png"
+					class="h-12"
+					alt="EOMS Plain Logo"
+				/>
+
+				<h1 class="text-xl font-semibold text-white">
+					EOMS - ENTERPRISE OPERATIONS MANAGEMENT SYSTEM
+				</h1>
+			</div>
+		</header>
+
+		<main
+			class="flex flex-col gap-10 justify-center items-center bg-cultured h-screen w-10/12 mx-auto"
+		>
+			<div>
+				<img src="./assets/ems_text.png" class="h-28" alt="" />
+			</div>
+
+			<div class="bg-white border border-slate">
+				<div>
+					<h2 class="font-bold text-center pt-8">
+						ENTERPRISE OPERATION MANAGEMENT SYSTEM
+					</h2>
+				</div>
+
+				<div class="px-20 py-8 shadow-2xl">
+					<div class="font-medium border border-cultured py-3 px-10">
+						<h2>ENTERPRISE OPERATION MANAGEMENT SYSTEM</h2>
+					</div>
+
+					<div class="bg-cultured border border-cultured p-10">
+						<div class="flex items-center">
+							<label
+								for="user_name"
+								class="block text-right max-w-24 w-full mr-2"
+								>User Name:</label
+							>
+
+							<input
+								type="email"
+								name="user_name"
+								id="user_name"
+								class="shadow-inner py-1 px-3 w-full"
+								placeholder="Enter your username"
+							/>
+						</div>
+
+						<div class="flex items-center mt-3 mb-8">
+							<label
+								for="password"
+								class="block text-right max-w-24 w-full mr-2"
+								>Password:</label
+							>
+
+							<input
+								type="password"
+								name="password"
+								id="password"
+								class="shadow-inner py-1 px-3 w-full"
+								placeholder="Enter your password"
+							/>
+						</div>
+
+						<div class="flex gap-2 max-w-60 ml-auto">
+							<button
+								class="border-2 shadow-lg w-full py-1 hover:border-2 hover:border-black"
+							>
+								OK
+							</button>
+
+							<button
+								class="border-2 shadow-lg w-full py-1 hover:border-2 hover:border-black"
+							>
+								Help
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="text-white bg-slate p-5">
+					<div class="mb-2">
+						<input type="checkbox" name="remember_me" id="remember_me" />
+
+						<label for="remember_me">Remember me</label>
+					</div>
+
+					<a href="/">Forgot password?</a>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
